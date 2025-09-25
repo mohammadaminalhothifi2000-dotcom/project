@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+    background: linear-gradient(135deg,#f2f3f5,#00f2fe,#00f2fe);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+}
+.logo{
+    color: #fff;
+}
+.nav-list{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.btn{
+    background-color: #4facfe;
+    border: none;
+    padding: 0.6rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.btn:hover{
+    background: #00f2fe;
+} 
+.footer{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    background: rgba(255,255,255,0.2);
+}
+
+
+/*******************************************-*/
+.main1{
+    flex: 1;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    text-align: non`;
+}
+.intro, .projects, .photo{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.projects .project{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #4facfe;
+    border-radius: 8px;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.photo img{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+@media (max-width:800px){
+    .main{
+        padding: 1rem;
+    }
+    .intro , .projects, .photo{
+        padding: 1.5rem;
+    }
+}
